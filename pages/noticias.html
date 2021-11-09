@@ -4,99 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noticias sobre cine, nuevos estrenos,septimo arte">
+    <meta name="keywords" content="Dune,Spiderman:No way home, Eternals, news, noticias,news,popcorn movies">
     <title>noticias</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&family=Yatra+One&display=swap" rel="stylesheet">
+    <!--librerias internas-->
+    <link rel="stylesheet" href="../assets/icons/webfonts/all.css">
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- css propio -->
+    <link rel="stylesheet" href="../css/maincss.css">
 </head>
+
 <body>
-    <header>
-        <div class="cont__header">
-            <div class="logo">
-                <img src="../assets/images/logo.png" class="logo" alt="logo">
-            </div>
-            <h1 class="tittle__page">
-                Pochoclo News
-            </h1>
-          <div class="cont__nav">  
-              <nav>
-                <ul>
-                   <li>
-                           <a href="./index.html">Home</a> 
-                       </li>
-                       <li>
-                           <a href="./noticias.html">Noticias</a>
-                       </li>
-                       <li>
-                           <a href="./podcast.html">Podcast</a>
-                       </li>
-                       <li>
-                           <a href="./proximos estrenos.html">Proximos Estrenos</a>
-                       </li>
-       
-                       <li>
-                           <a href="./contacto.html">Contacto</a>
-                       </li>
-                </ul>
-              </nav>
-           </div>   
+    <!-- Logo y Navbar -->
+<header class="container-fluid bg-dark d-flex justify-content-center sticky-lg-top">
+    <nav class="navbar navbar-expand-lg p-1" id="menu">
+        <a class="navbar-brand" href="../index.html">
+         <img src="../assets/images/logo.png" alt="logo" width="50" height="50">
+        </a>
+        <button class="navbar-toggler bg-primary " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="../pages/podcast.html">Podcast</a>  
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="../pages/proximos estrenos.html">Próximos Estrenos</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+
+          </ul>
         </div>
-        </header>
-        <main>
-         <h2 class="noticias__tittle">
-             Noticias
-         </h2>
-         
-
-        </main>
-        <!-- En la seccion de noticias iran del costado izquierdo imagenes y del derecho texto -->
-        <section>
-            <div id="grilla">
-                <div class="cont__news" >
-                    <p>
-                         Tres meses de distancia para uno de los estrenos de series más esperados del año. 
-                         La segunda temporada de The Witcher se estrena el 17 de diciembre en Netflix y Henry Cavill se ha animado a compartir algunos detalles sobre la esperada nueva entrega de la serie adaptación de las novelas del autor polaco Andrzej Sapkowski, en la que interpreta al personaje protagonista, Geralt de Rivia, y que promete ser bastante diferente a una primera entrega que supuso básicamente una primera aproximación a la historia del brujo y su protegida, Ciri (Freya Allan).
-                    </p>
-                 </div>
-                <div class="img__news">
-                    <img src="../assets/images/imagen1-noticias.jpg" alt="imagen1">
-                 </div>
-                <div class="img__news">
-                    <img src="../assets/images/imagen2-noticias.jpg" alt="imagen2">
-                 </div>
-                <div class="cont__news">
-                    <p>
-                        Durante una entrevista con Unilad, Gerard Butler ha confirmado que en breve dará comienzo la producción de la secuela de la película de 2018, 'Juego de ladrones: El atraco perfecto'. Durante un tiempo se ha venido hablando de la posibilidad de este proyecto confirmado ahora por el actor:
-                        "Se supone que rodaremos a principios del año que viene. Ponemos rumbo a Europa, todavía estamos a la caza de Donnie [O'Shea Jackson Jr.], que ahora está en el distrito de los diamantes en Marsella", dijo Butler. "Me acerco para darle caza, pero con intenciones diferentes de las que te imaginas. Así que estaremos en Marsella, los Alpes y Londres; definitivamente es un viaje más glamoroso que el anterior, y probablemente un viaje más divertido y sexy".
-                    </p>
-                  </div>
-                <div class="cont__news">
-                    <p>
-                        Una de las asociaciones más exitosas de los últimos años ha llegado a su fin oficialmente. Tal y como informa Deadline, el realizador Christopher Nolan y Warner Bros. no seguirán de la mano después de colaborar en éxitos de taquilla como la trilogía de 'El caballero oscuro', 'Origen', 'Interstellar' o 'Tenet'.
-                        La ruptura entre estudio y director surgió después de que Warner Bros. decidiera estrenar su catálogo de 2021 de manera simultánea tanto en salas de cine como en HBO Max. Aunque entre estas películas no estuviese la mencionada 'Tenet', si fue determinante para que la relación entre la compañía y el director se enfriase notablemente e hiciera que Nolan se mostrara abierto a negociar con otros estudios.
-                        Es por ello que, tras una dura pugna con MGM y Sony, la próxima película de Nolan será finalmente respaldada por Universal Pictures. El nuevo proyecto de Nolan tratará sobre el físico teórico estadounidense J. Robert Oppenheimer y su implicación en el desarrollo de la bomba atómica durante la Segunda Guerra Mundial.
-                    </p>
-                 </div>
-                <div class="img__news">
-                    <img src="../assets/images/imagen3-noticias.jpg" alt="imagen3">
-                 </div>
-            </div>
-        </section>
-</body>
-  <footer>
-    <div>
-        <div class="footer__desarrollo">Desarrollado por Maximiliano Dierna</div>
-        <div class="footer__pagina">
-            <section>Facebook</section>
-            <section>Twitter</section>
-            <section>Instagram</section>
-        </div>    
-
-        </div>
-
-    </div>
+    </nav>
+</header>
     
-  </footer>
+        <!--Noticias  -->
+
+ <section>
+    <div id="grilla">
+      <div class="cont__news" >
+        <p><strong>
+          The Eternals
+            <br>
+          De acuerdo a la información oficial, la nueva película del Universo Cinematográfico de Marvel, Eternals, llegará a los diferentes cines del país el próximo 5 de noviembre de 2021. 
+             <br>
+             <br>
+          Recientemente la directora del Premio Oscar por Nomadland, adelantó que esta película tendrá dos escenas post-créditos que vendrán con grandes sorpresas para los fanáticos
+        </p></strong>
+      </div>
+      <div class="img__news">
+        <img src="../assets/images/imagenes noticias/eternals1.jpeg" alt="imagen1">
+      </div>
+      <div class="img__news">
+        <img src="../assets/images/imagenes noticias/dune 1.jpg" alt="imagen2">
+      </div>
+      <div class="cont__news">
+        <p><strong>
+          Dune
+            <br>
+          ¿Cuánto dura la película Dune?
+            <br>
+          La Dune de Denis Villeneuve se estrenará definitivamente en cines con una duración de 155 minutos, es decir 2 horas y 35 minutos.
+            <br>
+            <br>
+          La producción de Warner Bros. llegará a las salas el próximo 21 de octubre en Chile, y al día siguiente en Estados Unidos, a donde también llegará en HBO Max. En Latinoamérica, la película debutará oficialmente a través del servicio de streaming 35 días después.
+        </p></strong>
+      </div>
+      <div class="cont__news">
+        <p><strong>
+          Spiderman:No Way Home
+            <br>
+          Tom Holland remarcó que esta entrega será una conclusión de su saga como Spidey.
+            <br>
+            <br>
+          Si bien en varias oportunidades el actor ha manifestado que quiere continuar interpretando al trepamuros por un buen tiempo, en el marco de una nueva entrevista con EW, el actor contó que, independiente de lo que pase a futuro, esta entrega será una “conclusión” para su versión del arácnido.
+          “Todos estábamos tratando a (No Way Home) como el final de una franquicia, digamos”, señaló Holland. “Creo que si tuviéramos la suerte de sumergirnos nuevamente en estos personajes, verías una versión muy diferente
+        </p></strong>
+      </div>
+      <div class="img__news">
+        <img src="../assets/images/imagenes noticias/spiderman1.jpg" alt="imagen3">
+      </div>  
+    </div>
+ </section>
+
+        <!-- Footer -->
+
+ <footer>
+
+    <div class="cont__footer">
+      <ul>
+        <li>
+          <a href="./error404.html" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="./error404.html" class="instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="./error404.html" class="twitter"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul> 
+    </div>
+
+ </footer>
+
+
+
+
+        <script src="../js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+</body>
+  
 
 </html>

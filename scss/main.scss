@@ -1,0 +1,269 @@
+/* Reset */
+@import "_reset.scss";
+
+/*Variables*/
+@import "_variables.scss";
+
+  
+  
+/* Navbar*/
+
+#menu{
+   font-size: 1.3em;
+   font-weight: bold;
+
+}  
+
+
+#menu a:hover{
+    font-size: 1.5em;
+    font-weight:800;
+    color:red ;
+    font-family:'Times New Roman', Times, serif;
+  
+}
+
+
+
+
+
+      
+/*Sección de Noticias*/
+ 
+
+#grilla {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 400px 400px;
+  background-color:burlywood;
+  padding: 20px;
+  grid-row-gap: 40px;
+  grid-column-gap:20px;
+          }
+
+
+.cont__news{
+   background-color:$fontbox-background;
+   border:$fontbox-border;
+   font-size:$fontbox-font-size;
+   color:$fontbox-color;
+   overflow:$fontbox-overflow;
+   object-fit: cover;
+   font-weight:$fontbox-font-weight;
+   text-align:$fontbox-text-align;
+   border-radius:$fontbox-border-radius;
+   justify-items: $fontbox-justify-items;
+   
+  
+}  
+/*Animacion texto noticias*/
+
+p {
+  animation: 2s;
+  animation-iteration-count: initial;
+  animation-name: showing; 
+  animation-direction:alternate-reverse;
+}
+
+@keyframes showing {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 2;
+   }
+ 
+  }
+
+
+
+
+.img__news{
+  border:1px solid red;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius:$fontbox-border-radius;
+
+  } 
+
+
+.img__news img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  }
+
+  @media screen and (max-width:600px){
+    #grilla{
+      grid-template-rows:repeat(3,200px);
+      grid-template-columns: 1;
+    }
+    .cont__news{
+      grid-template-rows: 400px;
+    }
+
+    
+  }
+
+       
+/*Sección de Podcast */
+     
+  .podcast_tittle{
+      padding-top: 1rem;
+      font-size: 4rem;
+      font-family: Impact,'Arial Narrow Bold', sans-serif;
+      display: grid;
+      justify-items: center;
+      padding-bottom: 5rem;
+      color:red;
+               }
+  
+  #main__podcast{
+       display: flex;
+       flex: 1;
+       flex-direction: row;
+       justify-content: space-around;
+       border:2px solid orange;
+            }
+  
+  article{
+       padding:30rem;
+       margin:1px;
+       font-size: 40px;
+       font-style: italic;
+       font:bolder;
+       color: white;
+       }
+  
+/* Sección Próximos Estrenos */
+/*Animacion*/
+
+  em{
+  animation: 3s;
+  animation-iteration-count: initial;
+  animation-name: slidein; 
+  animation-direction:alternate-reverse;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:25%;
+    width: 75%
+  }
+
+  to {
+    margin-right: 20%;
+    width: 50%;
+  }
+}
+  
+.card-title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  
+}
+ 
+ 
+  
+  
+  
+/* Sección Contacto*/
+
+  .form-label{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color:$fontbox-color;
+
+  }  
+
+  
+  
+  .contacto__tittle{
+    padding-top: 1rem;
+    font-size: 4rem;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 5rem;
+    color: red;
+  
+  }
+  
+  .cont__contacto {
+      font-family:serif;
+      color:black;
+      font-size:initial;
+      text-align:center;
+     
+  
+  }
+  
+  input.reset{
+  
+        color:blue;
+  }
+  
+  input.submit{
+        color: red;
+    }
+
+
+ /* Aca va la Sección del footer que se tiene que repetir para todas las secciones*/
+ /*Trate de hacerlo con bootstrap pero no encontraba como modificar los iconos, y darle la forma que queria*/
+
+
+
+
+.cont__footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#212529;
+  height: 5rem;
+}
+
+ 
+.cont__footer ul li{
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  
+}
+
+.cont__footer ul li a{
+  display: block;
+  padding: 0 10px;
+  line-height: 50px;
+  font-size: 22px;
+  box-shadow: 0 3px 5px 0px rgba(0,0,0, .2);
+  transition: .2s;
+}
+
+.cont__footer ul:hover a{
+  filter:brightness(8);
+}
+
+.cont__footer ul li a:hover{
+  box-shadow: 0 3px 5px 0px rgba(0,0,0, .2);
+  transform: translateY(-2px) scale(1.02);
+  filter: none;
+}
+
+
+
+.fa-facebook-f{
+  color: $fa-facebook-f;
+}
+.fa-instagram{
+  color:$fa-instagram;
+}
+
+.fa-twitter{
+  color:$fa-twitter;
+}
+
+
+/* Página Error*/
+

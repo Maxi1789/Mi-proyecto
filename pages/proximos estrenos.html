@@ -4,97 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>proximos estrenos</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&family=Yatra+One&display=swap" rel="stylesheet"> 
+    <meta name="description" content="trailers, proximos estrenos, peliculas a estrenar,movie trailers">
+    <meta name="keywords" content=" Trailer Dune, Trailer Spiderman:No way home, Trailer Eternals, teaser, estrenos">
+    <title>próximos estrenos</title>
+    <!--librerias internas-->
+    <link rel="stylesheet" href="../assets/icons/webfonts/all.css">
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- css propio -->
+    <link rel="stylesheet" href="../css/maincss.css">
 </head>
 <body>
-    <header>
-        <div class="cont__header">
-            <div class="logo">
-                <img src="../assets/images/logo.png" class="logo" alt="logo">
-            </div>
-            <h1 class="tittle__page">
-                Pochoclo News
-            </h1>
-          <div class="cont__nav">  
-              <nav>
-                <ul>
-                   <li>
-                           <a href="./index.html">Home</a> 
-                       </li>
-                       <li>
-                           <a href="./noticias.html">Noticias</a>
-                       </li>
-                       <li>
-                           <a href="./podcast.html">Podcast</a>
-                       </li>
-                       <li>
-                           <a href="./proximos estrenos.html">Proximos Estrenos</a>
-                       </li>
-       
-                       <li>
-                           <a href="./contacto.html">Contacto</a>
-                       </li>
-                </ul>
-              </nav>
-           </div>   
-        </div>
-    </header>
-        <main>
-            <h2 class="proximosestrenos__tittle">
-                Proximos Estrenos
-            </h2>
-        </main>
-        <section id="main__px">
-            <div class="movie__trailer">
-                <iframe src="https://www.youtube.com/embed/MKWXuj3ZYf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                Su navegador no puede reproducir este formato de video
-            </div>
-            <div class="movie__coment">
-                <h3 class="tittle__trailer">
-                    "The Eternals"
-                </h3>
-                
-                <p>
-                    Los Eternos de Marvel Studios nos presenta a un nuevo y emocionante equipo de superhéroes en el Universo Cinematográfico de Marvel,antiguos alienígenas que han estado viviendo en la Tierra en secreto durante miles de años. Después de los eventos de Vengadores: Endgame, una tragedia inesperada los obliga a salir de las sombras para reunirse contra el enemigo más antiguo de la humanidad, Los Desviantes.
-                </p>
-                <p>
-                    Proximo Estreno 5 de Noviembre 2021
-                </p>
-            </div>
-            <div class="movie__coment">
-                <h4 class="tittle__trailer">
-                    "Spider-Man: No Way Home"
-                </h4>
-                <p>
-                    “Por primera vez en la historia cinematográfica de Spider-Man, nuestro amigable héroe vecino está desenmascarado y ya no puede separar su vida normal de los grandes desafíos de ser un superhéroe. Cuando le pide ayuda al Doctor Strange, lo que está en juego se vuelve aún más peligroso, lo que lo obliga a descubrir lo que realmente significa ser Spider-Man”.
-                </p>
-                <p>
-                    Proximo Estreno 17 de Diciembre de 2021
-                </p>
-            </div>
-            <div class="movie__trailer">
-                <iframe src="https://www.youtube.com/embed/iZdZyHQpecQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
-        </section>
-</body>
-  <footer>
-    <div>
-        <div class="footer__desarrollo">Desarrollado por Maximiliano Dierna</div>
-        <div class="footer__pagina">
-            <section>Facebook</section>
-            <section>Twitter</section>
-            <section>Instagram</section>        
-        </div>    
+        <!-- Logo y Navbar -->
+  <header class="container-fluid bg-dark d-flex justify-content-center sticky-lg-top ">
+       <nav class="navbar navbar-expand-lg p-1" id="menu">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/images/logo.png" alt="logo" width="50" height="50">
+        </a>
+        <button class="navbar-toggler bg-primary " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="../pages/podcast.html">Podcast</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="../pages/proximos estrenos.html">Próximos Estrenos</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
 
+          </ul>
         </div>
+      </nav>
+</header>
 
+  <!-- trailers y comentario -->
+
+ <section>
+
+  <div class="container mt-3">
+    <div class="row ">
+      <div class="col-sm-12 ">
+        <div class="alert alert-primary" role="alert">
+          <h2 class="display-5">"Eternals" Estreno el 04 de Noviembre</h2>
+        </div>
+      </div>
     </div>
-  </footer>
+  </div>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/MKWXuj3ZYf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-sm-6 ">
+        <div class="card">
+          <div class="card-body">
+            <h4  class="card-title"><strong>Eternals</strong></h4>
+            <em class="card-text text-danger"><strong>Hace millones de años, los seres cósmicos conocidos como los Celestiales comenzaron a experimentar genéticamente con los humanos.
+              Su intención era crear individuos superpoderosos que hicieran únicamente el bien, pero algo salió mal y aparecieron los Desviantes, destruyendo y creando el caos a su paso. Ambas razas se han enfrentado en una eterna lucha de poder a lo largo de la historia. En medio de esta guerra, Ikaris (Richard Madden) y Sersi (Gemma Chan) tratarán de vivir su propia historia de amor.
+              Esta película está basada en los cómics de Marvel creados por Jack Kirby.
+              "A lo largo de los años, nunca hemos interferido, hasta ahora".</strong></em>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <div class="row ">
+          <div class="col-sm-12 ">
+            <div class="alert alert-primary" role="alert">
+              <h2 class="display-5">"Dune" Estreno el 21 de Octubre</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+        <div class="card-body">
+          <h4  class="card-title"><strong>Dune</strong></h4>
+          <em class="card-text text-danger"><strong>El viaje de un héroe mítico y cargado de emociones, "Dune” cuenta la historia de Paul Atreides, un joven brillante y talentoso con un gran destino más allá de su comprensión, que debe viajar al planeta más peligroso del universo para asegurar el futuro de su familia y su gente.
+          A medida que las fuerzas malévolas estallan en un conflicto por el suministro exclusivo del planeta del recurso más preciado que existe, un bien capaz de liberar el mayor potencial de la humanidad, solo sobre vivirán aquellos que puedan conquistar su miedo.</strong></em>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/oIhATu76I-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="row ">
+      <div class="col-sm-12 ">
+        <div class="alert alert-primary" role="alert">
+          <h2 class="display-5">"Spiderman:No Way Home" Estreno 17 de diciembre de 2021 </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-3">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/z70zo9gQUKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h4  class="card-title"><strong>Spiderman: No Way Home</strong></h4>
+            <em class="card-text text-danger"><strong>Por primera vez en la historia cinematográfica de Spider-Man, nuestro héroe, vecino y amigo es desenmascarado y por tanto ya no capaz de separar su vida normal de los enormes riesgos que conlleva ser un Súper Héroe.
+              Cuando pide ayuda a Doctor Strange, los riesgos pasan a ser aún más peligrosos, obligándole a descubrir lo que realmente significa ser Spider-Man.</strong></em>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+ </section>
+
+        
+
+<!-- Seccion del Footer -->
+  
+<footer>
+  <div class="cont__footer">
+    <ul>
+    <li>
+      <a href="./error404.html" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    </li>
+    <li>
+      <a href="./error404.html" class="instagram"><i class="fab fa-instagram "></i></a>
+    </li>
+    <li>
+      <a href="./error404.html" class="twitter"><i class="fab fa-twitter"></i></a>
+    </li>
+    
+  </ul> 
+  </div>
+  
+ 
+
+</footer>
+
+
+
+    <script src="../js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+</body>
+  
 </html>
